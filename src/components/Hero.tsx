@@ -3,7 +3,10 @@ import { Crown, Phone, Mail, MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen bg-gradient-to-br from-navy-dark via-navy to-navy-light flex items-center overflow-hidden">
+<section
+  id="home"
+  className="relative min-h-screen bg-gradient-to-br from-navy-dark via-navy to-navy-light flex items-center overflow-hidden pt-16 md:pt-24 pb-16 md:pb-24"
+>
       {/* Geometric Decorations */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-orange to-orange-light rounded-full opacity-20 blur-xl"></div>
       <div className="absolute bottom-20 right-10 w-48 h-48 bg-gradient-to-br from-orange-light to-orange rounded-full opacity-10 blur-2xl"></div>
