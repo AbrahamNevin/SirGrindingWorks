@@ -36,23 +36,39 @@ const Footer = () => {
           </div>
           
           {/* Contact Info */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-orange" />
-                <span className="text-gray-300">+91 7744000669</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="w-4 h-4 text-orange" />
-                <span className="text-gray-300">+91 8788109158</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="w-4 h-4 text-orange" />
-                <span className="text-gray-300">sir2040@gmail.com</span>
-              </div>
-            </div>
+                <div>
+        <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+        <div className="space-y-3 text-sm">
+          <div className="flex items-center space-x-2">
+            <Phone className="w-4 h-4 text-orange" />
+            <a
+              href="tel:+917744000669"
+              className="text-gray-300 hover:text-orange transition"
+            >
+              +91 7744000669
+            </a>
           </div>
+          <div className="flex items-center space-x-2">
+            <Phone className="w-4 h-4 text-orange" />
+            <a
+              href="tel:+918788109158"
+              className="text-gray-300 hover:text-orange transition"
+            >
+              +91 8788109158
+            </a>
+          </div>
+          <div className="flex items-center space-x-2">
+            <Mail className="w-4 h-4 text-orange" />
+            <a
+              href="mailto:sir2040@gmail.com"
+              className="text-gray-300 hover:text-orange transition"
+            >
+              sir2040@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+
           
           {/* Address */}
           <div>

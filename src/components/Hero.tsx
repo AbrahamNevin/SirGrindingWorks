@@ -54,21 +54,26 @@ const Hero = () => {
           
           {/* Quick Contact */}
           <div className="grid sm:grid-cols-2 gap-4 pt-8 border-t border-white/20">
-            <div className="flex items-center space-x-3">
-              <Phone className="w-5 h-5 text-orange" />
-              <div>
-                <p className="text-sm text-gray-300">Call Rajesh</p>
-                <p className="font-semibold">+91 7744000669</p>
-              </div>
-            </div>
-            <div className="flex items-center space-x-3">
-              <Phone className="w-5 h-5 text-orange" />
-              <div>
-                <p className="text-sm text-gray-300">Call Rahul</p>
-                <p className="font-semibold">+91 8788109158</p>
-              </div>
+          <div className="flex items-center space-x-3">
+            <Phone className="w-5 h-5 text-orange" />
+            <div>
+              <p className="text-sm text-gray-300">Call Rajesh</p>
+              <a href="tel:+917744000669" className="font-semibold hover:text-orange transition">
+                +91 7744000669
+              </a>
             </div>
           </div>
+          <div className="flex items-center space-x-3">
+            <Phone className="w-5 h-5 text-orange" />
+            <div>
+              <p className="text-sm text-gray-300">Call Rahul</p>
+              <a href="tel:+918788109158" className="font-semibold hover:text-orange transition">
+                +91 8788109158
+              </a>
+            </div>
+          </div>
+        </div>
+
         </div>
         
         {/* Visual Element */}
