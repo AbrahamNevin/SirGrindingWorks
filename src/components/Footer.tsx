@@ -94,12 +94,12 @@ const Footer = () => {
         <div className="border-t border-navy-light mt-8 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-300">
-              © 2024 SIR Grinding Works. All rights reserved.
+              © 2025 SIR Grinding Works. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-gray-300">
-              <a href="#" className="hover:text-orange transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-orange transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-orange transition-colors">Quality Policy</a>
+              <p className="hover:text-orange transition-colors">Privacy Policy</p>
+              <p className="hover:text-orange transition-colors">Terms of Service</p>
+              <p className="hover:text-orange transition-colors">Quality Policy</p>
             </div>
           </div>
         </div>

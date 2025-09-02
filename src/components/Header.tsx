@@ -34,13 +34,7 @@ const Header = () => {
   Get Quote
 </Button>
         
-        <Button variant="ghost" className="md:hidden">
-          <div className="w-6 h-6 flex flex-col justify-center space-y-1">
-            <div className="w-full h-0.5 bg-current"></div>
-            <div className="w-full h-0.5 bg-current"></div>
-            <div className="w-full h-0.5 bg-current"></div>
-          </div>
-        </Button>
+        
       </div>
     </header>
   );
