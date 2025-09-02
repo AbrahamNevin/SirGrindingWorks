@@ -21,7 +21,7 @@ import {
 } from "lucide-react";
 
 const Services = () => {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement | null>(null);
 
   const services = [
     {
@@ -72,15 +72,14 @@ const Services = () => {
     },
   ];
 
-  const scroll = (direction) => {
+  // Scroll one card at a time
+  const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
-      const { scrollLeft, clientWidth } = scrollRef.current;
-      const scrollAmount = clientWidth * 0.8;
+      const cardWidth = 340 + 24; // 340px card + 24px gap (space-x-6)
+      const { scrollLeft } = scrollRef.current;
+
       scrollRef.current.scrollTo({
-        left:
-          direction === "left"
-            ? scrollLeft - scrollAmount
-            : scrollLeft + scrollAmount,
+        left: direction === "left" ? scrollLeft - cardWidth : scrollLeft + cardWidth,
         behavior: "smooth",
       });
     }
@@ -103,12 +102,12 @@ const Services = () => {
         {/* Scrollable Cards */}
         <div
           ref={scrollRef}
-          className="flex space-x-6 overflow-x-hidden scroll-smooth pb-6"
+          className="flex space-x-6 overflow-x-auto scroll-smooth pb-6 snap-x snap-mandatory"
         >
           {services.map((service, index) => (
             <Card
               key={index}
-              className="w-[340px] h-[420px] flex-shrink-0 group hover:shadow-[var(--shadow-industrial)] transition-all duration-300 hover:-translate-y-2 border-0 bg-white"
+              className="w-[340px] h-[420px] flex-shrink-0 snap-center group hover:shadow-[var(--shadow-industrial)] transition-all duration-300 hover:-translate-y-2 border-0 bg-white"
             >
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange to-orange-light rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">

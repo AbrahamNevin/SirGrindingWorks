@@ -73,15 +73,21 @@ const Footer = () => {
           {/* Address */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Visit Us</h4>
-            <div className="flex items-start space-x-2 text-sm">
-              <MapPin className="w-4 h-4 text-orange mt-1 flex-shrink-0" />
-              <div className="text-gray-300 leading-relaxed">
-                Rajgurunagar Industrial Society,<br />
-                Plot No.106/2, T-Block,<br />
-                Gala No.46, M.I.D.C,<br />
-                Bhosari, Pune - 411026
-              </div>
-            </div>
+<div className="flex items-start space-x-2 text-sm">
+  <MapPin className="w-4 h-4 text-orange mt-1 flex-shrink-0" />
+  <a
+    href="https://www.google.com/maps?client=safari&rls=en&oe=UTF-8&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KTcl0VlluMI7MZD4uGBsXgsg&daddr=JRJH%2BCR7,+MIDC,+Bhosari,+Pimpri-Chinchwad,+Maharashtra+411026"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-300 leading-relaxed hover:text-orange transition"
+  >
+    Rajgurunagar Industrial Society,<br />
+    Plot No.106/2, T-Block,<br />
+    Gala No.46, M.I.D.C,<br />
+    Bhosari, Pune - 411026
+  </a>
+</div>
+
           </div>
         </div>
         
